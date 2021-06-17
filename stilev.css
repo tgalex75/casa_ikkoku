@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #1f1f1f;
+  background-color: #f1f1f1;
   font-family: "Roboto", sans-serif;
 }
 a,
@@ -37,12 +37,27 @@ h4 {
   background-color: #440057;
   justify-content: space-between;
   align-items: center;
-  height: 5em;
+  height: 7em;
   padding: 20px 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   z-index: 3;
 }
+
+.header-pagine {
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  /* position: absolute; */
+  background-color: #440057;
+  justify-content: space-between;
+  align-items: center;
+  height: 7em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  /* z-index: 80; */
+}
+
 .logo_container {
   display: flex;
   display: -webkit-flex;
@@ -57,7 +72,6 @@ h4 {
   text-shadow: 2px 2px 5px #161616;
   display: flex;
   display: -webkit-flex;
-  flex-direction: column;
   text-transform: uppercase;
   padding: 3px;
 }
@@ -183,7 +197,7 @@ h4 {
   /* border: 3px solid #830052; */
   border-radius: 5px;
   padding: 15px 35px;
-  background-color: #830052;
+  background-color: #6E0563;
   margin-right: 10px;
   transition: 0.3s;
   color: #f1f1f1;
@@ -196,7 +210,7 @@ h4 {
 }
 
 .pulsante:hover {
-  background-color: #9e0064;
+  background-color: #8f0781;
   right: 12px;
   color: #f1f1f1;
 }
@@ -210,27 +224,86 @@ h4 {
   z-index: 0;
 }
 
-section {
+main h1 {
+  color: #440057;
+  padding: 10px;
+  text-align: center;
+  font-size: 3.2em;
 }
 
 .paragrafi {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-  /* height: 100vh; */
   margin-top: 5px;
   position: relative;
+  z-index: -1;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .colonna {
   width: 33.3%;
-  text-align: justify;
   padding: 10px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
   background-color: #f1f1f1;
 }
 
 .colonna:last-child {
   flex-grow: 1;
+}
+
+.colonna p {
+  margin-top: 20px;
+}
+
+.contenitore {
+  display: flex;
+  display: -webkit-flex;
+  
+}
+
+.contenitore img {
+  display: block;
+  margin: 0px auto;
+  width: 95%;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #3B056E;
+  margin-top: 20px;
+}
+.lista_per{
+  margin-top: 20px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.riga_per {
+  display: flex;
+  display: -webkit-flex;
+  border: 5px solid #3B056E;
+  margin-bottom: 10px;
+  height: 33.3%;
+  align-items: center;
+}
+
+.riga_img{
+  height: 100%;
+
+}
+
+.riga_img img{
+  height: 100%;
+  width: 6.25em;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.riga_par{
+  flex: 1;
+  padding: 5px 15px;
 }
 
 .paragrafi h3 {
@@ -284,22 +357,55 @@ p {
   .menu li a {
     color: #f1f1f1;
     margin: 0em 1.25em;
-    font-size: 1em;
-    padding: 0.5em;
+    font-size: 20px;
+    padding: 15px 30px;
+    justify-content: space-around;
+    border-bottom: none;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background: rgba(0, 0, 0, 0.95);
+    height: 100vh;
+    padding-top: 80px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .menu li {
+    display: block;
+    padding: 25px;
+  }
+  
+  .menu--open {
+    right: 0%;
   }
 
   .colonna {
     width: 50%;
   }
-  .header {
+  .header, .header-pagine{
     display: flex;
     display: -webkit-flex;
-    flex-direction: column;
     padding-bottom: 1.2em;
+    align-items: center;
   }
-  .pulsante {
-    /* display: none; */
+
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
   }
+  .hamburger span {
+    background: #f1f1f1;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+  }
+ 
   main h1 {
     color: #264653;
     padding: 10px;
@@ -326,11 +432,12 @@ p {
     font-size: 1.1em;
     margin-right: 5em;
   }
+  
   .menu li a {
     color: #f1f1f1;
     margin: 0em 1.25em;
-    font-size: 0.75em;
-    padding: 0.3em;
+    font-size: 20px;
+    padding: 15px 30px;
     justify-content: space-around;
     border-bottom: none;
   }
@@ -348,11 +455,7 @@ p {
     display: block;
     padding: 25px;
   }
-  .menu li a {
-    padding: 15px 30px;
-    font-size: 20px;
-  }
-
+  
   .menu--open {
     right: 0%;
   }
@@ -362,7 +465,6 @@ p {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 40px;
     right: 30px;
   }
   .hamburger span {
@@ -375,19 +477,18 @@ p {
   .colonna {
     width: 100%;
   }
-  .header {
+  .header, .header-pagine {
     display: flex;
     display: -webkit-flex;
-    flex-direction: column;
     padding-bottom: 0.5em;
-  }
-  .pulsante {
-    /* display: none; */
+    height: 4em;
+    flex-direction: row;
   }
 
   .centrale p {
     width: 85vw;
   }
+
   .centrale h1 {
     padding: 10px;
     text-align: center;
@@ -450,7 +551,6 @@ p {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 40px;
     right: 30px;
   }
   .hamburger span {
@@ -463,10 +563,9 @@ p {
   .colonna {
     width: 100%;
   }
-  .header {
+  .header, .header-pagine {
     display: flex;
     display: -webkit-flex;
-    flex-direction: column;
     padding-bottom: 0.5em;
   }
   .pulsante {
