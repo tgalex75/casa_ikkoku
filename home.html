@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stile5.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><img src="" alt="" />LOGO</div>
+      <ul class="menu">
+        <li><a href=""></a>Storia</li>
+        <li><a href=""></a>Personaggi</li>
+        <li><a href=""></a>Contatti</li>
+      </ul>
+      <div class="cta">
+        <a href="" class="button"> Contatti</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        /* Open Panel */
+        $(".hamburger").on("click", function () {
+          $(".menu").toggleClass("menu--open");
+        });
+      });
+    </script>
+  </body>
+</html>

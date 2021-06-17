@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #264653;
+    font-family: 'Oxygen', sans-serif;
+}
+
+header{
+    background-color: #e76f51;
+    background-position: center;
+    background-size: cover;
+    height: 80px;
+    padding: 20px;
+    margin: 0;
+}
+
+nav{
+    font-family: 'Comfortaa', cursive;
+    font: weight: 800;
+    background-color: #e9c46a;
+    height: 60px;
+    }
+
+p{
+    padding: 20px;
+    background-color: #2a9d8f;
+    font-size: medium;
+    color: #e9c46a;
+    text-align: justify;
+    width: 33%;
+}
+
+h3{
+    font-size: large;
+    color: #e76f51;
+}
+
+img{
+    vertical-align: middle;
+    float:left;
+    position: absolute;
+    padding: 3px;
+}
+.div_tondo{
+    border-radius: 50%;
+    background-image: url(/img/love.png);
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: coral;
+    background-size: cover;
+    /* position: fixed;
+    /* top: 20px;
+    right: 50px;  */ */
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
+li{
+    margin: 15px;
+    flex: 100px;
+    align-items: center;
+}
+a, a:visited{
+    text-decoration: none;
+    color:#264653;
+    
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
