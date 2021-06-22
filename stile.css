@@ -49,8 +49,13 @@ h4 {
   background-color: transparent;
 }
 
-#header_home .menu li a{
-  border-bottom: transparent;
+#menu_home li a{
+  border-bottom: none;
+  padding: .5em 0;
+}
+
+#menu_home li a:hover{
+  border-bottom: 3px solid #f1f1f1;
 }
 
 .logo_container {
@@ -263,10 +268,9 @@ h4 {
 .contenitore {
   display: flex;
   display: -webkit-flex;
-  
-}
+ }
 
-.contenitore img {
+ .contenitore img {
   display: block;
   margin: 0px auto;
   width: 95%;
@@ -275,6 +279,35 @@ h4 {
   border: 5px solid #3B056E;
   margin-top: 20px;
 }
+
+.riga_storia{
+  width: 85%;
+  padding: 10px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+.contenitore_oriz{
+  display: flex;
+  display: -webkit-flex;
+}
+
+.contenitore_oriz img{
+  display: block;
+  margin: 0px auto;
+  width: 95%;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #3B056E;
+  margin-top: 20px;
+}
+
+.contenitore_oriz p{
+  margin-top: 20px;
+}
+
 .lista_per{
   margin-top: 20px;
   display: flex;
