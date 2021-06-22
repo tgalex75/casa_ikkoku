@@ -10,8 +10,8 @@ body {
 }
 
 p {
-    font-family: "Roboto", sans-serif;
-    color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 
 h1,
@@ -36,9 +36,9 @@ h4 {
   height: 100%;
 }
 
-.logo {  
+.logo {
   border: 1px solid red;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   padding: 0.5em;
   color: white;
@@ -48,9 +48,10 @@ h4 {
 
 .menu {
   display: flex;
-  flex: 2;
+  flex: 1;
   border: 1px solid red;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .menu ul {
@@ -58,6 +59,8 @@ h4 {
   list-style: none;
   margin-right: 2em;
   border: 1px solid white;
+  justify-content: flex-end;
+  flex-flow:  row wrap;
 }
 
 .menu li {
@@ -65,6 +68,7 @@ h4 {
 }
 
 .menu li a {
+  display: block;
   text-decoration: none;
   color: #fff;
   font-size: 1.2em;
@@ -121,6 +125,32 @@ h1 {
   align-items: center;
   justify-content: center;
   font-weight: 500;
+}
+
+/* ! Tablet */
+@media all and (max-width: 800px) {
+  .menu ul {
+    justify-content: space-around;
+    border-bottom: none;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+/* ! Smartphone */
+@media all and (max-width: 600px) {
+  .menu ul {
+    flex-flow: column wrap;
+    padding: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .menu li a{
+    text-align: center; 
+    padding: 10px;
+    border-bottom: none ;
+  }
 }
 
 *,
