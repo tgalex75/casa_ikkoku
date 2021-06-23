@@ -11,7 +11,13 @@ body {
   background-color: #f1f1f1;
   font-family: "Roboto", sans-serif;
 }
-a,
+
+a {
+  text-decoration: none;
+  color: #6E0563;
+  font-weight: 700;
+}
+
 h1,
 h2,
 h3 {
@@ -114,6 +120,7 @@ h4 {
   background-color: transparent;
   padding: .5em 0;
   border-bottom: 3px solid #440057;
+  text-transform: uppercase;
 }
 
 .menu li a:hover {
@@ -243,7 +250,7 @@ h4 {
   flex-wrap: wrap;
   margin-top: 5px;
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
   margin: 0 auto;
   width: 90%;
 }
@@ -263,6 +270,15 @@ h4 {
 
 .colonna p {
   margin-top: 20px;
+}
+
+.continua {
+  text-align: right;
+  margin-top: auto;
+}
+
+.continua a:hover {
+  border-bottom: 2px solid #6E0563;
 }
 
 .contenitore {
@@ -288,24 +304,22 @@ h4 {
   flex-direction: column;
   background-color: #f1f1f1;
 }
-
 .contenitore_oriz{
-  display: flex;
-  display: -webkit-flex;
+  border: 1px solid red;
 }
-
 .contenitore_oriz img{
+  float: left;
+  width: 15em;
+  height: 10em;
   display: block;
-  margin: 0px auto;
-  width: 95%;
-  height: 150px;
   object-fit: cover;
   border: 5px solid #3B056E;
-  margin-top: 20px;
+  border: 1px solid green;
 }
 
 .contenitore_oriz p{
-  margin-top: 20px;
+  border: 1px solid yellow;
+  margin-left: 10px;
 }
 
 .lista_per{
