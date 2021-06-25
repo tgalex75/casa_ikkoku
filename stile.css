@@ -313,13 +313,12 @@ h4 {
   height: 10em;
   display: block;
   object-fit: cover;
-  border: 5px solid #3B056E;
-  border: 1px solid green;
+  border: 1px solid red;
+  padding: 10px 15px 10px 5px;
 }
 
 .contenitore_oriz p{
   border: 1px solid yellow;
-  margin-left: 10px;
 }
 
 .lista_per{
