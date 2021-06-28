@@ -297,7 +297,7 @@ h4 {
 }
 
 .riga_storia{
-  width: 85%;
+  width: 100%;
   padding: 10px;
   display: flex;
   display: -webkit-flex;
@@ -305,20 +305,18 @@ h4 {
   background-color: #f1f1f1;
 }
 .contenitore_oriz{
-  border: 1px solid red;
+  
 }
 .contenitore_oriz img{
   float: left;
-  width: 15em;
-  height: 10em;
+  width: 20em;
+  height: 15em;
   display: block;
   object-fit: cover;
-  border: 1px solid red;
   padding: 10px 15px 10px 5px;
 }
 
-.contenitore_oriz p{
-  border: 1px solid yellow;
+.contenitore_oriz p{ 
 }
 
 .lista_per{
