@@ -275,6 +275,13 @@ h4 {
   justify-content: center;
 }
 
+.capolettera {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
 .colonna {
   width: 33.3%;
   padding: 10px;
@@ -294,6 +301,12 @@ h4 {
 
 .colonna p {
   margin-top: 20px;
+}
+
+.col_storia {
+  width: auto;
+  flex: 1;
+  background-color: #f1f1f1;
 }
 
 .continua {
@@ -331,11 +344,11 @@ h4 {
 
 .contenitore_oriz img {
   float: left;
-  width: 20em;
-  height: 20em;
+  width: 10em;
+  height: 10em;
   display: block;
   object-fit: cover;
-  padding: 10px 15px 10px 5px;
+  padding: 5px 10px 5px 5px;
 }
 
 .contenitore_oriz p {
